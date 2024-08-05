@@ -1,0 +1,183 @@
+body {
+  font-family: "Brush Script MT", BrushScriptMT, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #c7e0d9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header a {
+  flex: 0 1 auto;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  flex: 0 1 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  border: 2px solid #333;
+  padding: 1em;
+  margin: 2em 0;
+  margin-left: 40%;
+  background: url(./images/2.jpg) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.profile h2,
+div {
+  margin-top: 80px;
+}
+
+section {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.members-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.member {
+  flex: 1;
+  min-width: 200px;
+  max-width: 22%;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.member-1 {
+  background: url("./images/bckrai.jpg") no-repeat center center;
+  background-size: cover;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.member-2 {
+  background: url("./images/bckrin.jpg") no-repeat center center;
+  background-size: cover;
+  font-size: 20px;
+  color: rgb(244, 175, 14);
+}
+
+.member-3 {
+  background: url("./images/bck.jpg") no-repeat center center;
+  background-size: cover;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.member-4 {
+  background: url("./images/bckyu.jpg") no-repeat center center;
+  background-size: cover;
+  font-size: 20px;
+  color: rgb(227, 78, 78);
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label,
+form input,
+form textarea {
+  width: 80%;
+  margin: 0.5em 0;
+}
+
+form button {
+  padding: 0.5em 2em;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .members-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    max-width: 80%;
+  }
+}
