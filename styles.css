@@ -17,10 +17,6 @@ header {
   flex-wrap: wrap;
 }
 
-header a {
-  flex: 0 1 auto;
-}
-
 header .logo {
   width: 100px;
   height: auto;
@@ -32,12 +28,8 @@ header h1 {
   margin: 0;
 }
 
-nav {
-  flex: 0 1 auto;
-}
-
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -63,7 +55,7 @@ nav ul li a {
   text-align: center;
   width: 300px;
   height: 400px;
-  color: rgb(255, 255, 255);
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +63,7 @@ nav ul li a {
 }
 
 .profile h2,
-div {
+.profile div {
   margin-top: 80px;
 }
 
@@ -102,33 +94,89 @@ section {
   border-radius: 50%;
 }
 
+.member-1,
+.member-2,
+.member-3,
+.member-4 {
+  background-size: cover;
+  color: #000;
+}
+
 .member-1 {
   background: url("./images/bckrai.jpg") no-repeat center center;
-  background-size: cover;
   font-size: 20px;
-  color: rgb(0, 0, 0);
 }
 
 .member-2 {
   background: url("./images/bckrin.jpg") no-repeat center center;
-  background-size: cover;
-  font-size: 20px;
-  color: rgb(244, 175, 14);
+  font-size: 21px;
 }
 
 .member-3 {
   background: url("./images/bck.jpg") no-repeat center center;
-  background-size: cover;
   font-size: 20px;
-  color: rgb(0, 0, 0);
 }
 
 .member-4 {
   background: url("./images/bckyu.jpg") no-repeat center center;
-  background-size: cover;
   font-size: 20px;
-  color: rgb(227, 78, 78);
+  color: #555;
 }
+
+#gallery {
+  padding: 2em;
+  text-align: center;
+}
+
+#file-input {
+  margin: 0.5em 0;
+}
+
+#upload-btn {
+  padding: 0.5em 1em;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#upload-btn:hover {
+  background: #555;
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.media-item {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 footer {
   background: #333;
   color: white;
